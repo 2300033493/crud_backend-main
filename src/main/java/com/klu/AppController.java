@@ -22,7 +22,11 @@ public class AppController {
 	public String insert(@RequestBody Product p) {
 		return s.insertData(p);
 	}
-
+	@GetMapping("/")
+   public String hello()
+	{
+		return "welcome"
+			}
 	@GetMapping("/display")
 	public List<Product> display() {
 		return s.displayData();
