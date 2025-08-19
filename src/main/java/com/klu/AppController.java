@@ -25,7 +25,7 @@ public class AppController {
 	@GetMapping("/")
    public String hello()
 	{
-		return "welcome"
+		return "welcome";
 			}
 	@GetMapping("/display")
 	public List<Product> display() {
